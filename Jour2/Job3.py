@@ -24,7 +24,7 @@ class Livre:
         self.__auteur = auteur
 
     def setN_pages(self, n_pages):
-        if n_pages > 0:
+        if n_pages >= 0:
             self.__n_pages = n_pages
         else:
             print("Erreur: Le nombre de pages doit être positif")
