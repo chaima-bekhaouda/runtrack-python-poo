@@ -1,10 +1,10 @@
 class Ville:
     def __init__(self, nom, nb_habitants):
-      self.nom = nom
-      self.nb_habitants = nb_habitants
+      self.__nom = nom
+      self.__nb_habitants = nb_habitants
 
     def getNom(self):
-        return self.nom
+        return self.__nom
 
     def getNb_habitants(self):
         return self.nb_habitants
@@ -14,10 +14,10 @@ class Ville:
 
 class Personne:
     def __init__(self, nom, age, ville: Ville):
-        self.nom = nom
-        self.age = age
-        self.ville = ville
-        self.ville.ajouter_habitant()
+        self.__nom = nom
+        self.__age = age
+        self.__ville = ville
+        self.__ville.ajouter_habitant()
 
     def ajouterPopulation(self):
         self.ville.ajouter_habitant()
