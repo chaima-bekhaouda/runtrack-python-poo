@@ -49,4 +49,3 @@ produit4 = Produit("clavier", 50, 30)
 produit4.setName("Keyboard")
 produit4.setPrice(70)
 produit4.afficher()
-g
