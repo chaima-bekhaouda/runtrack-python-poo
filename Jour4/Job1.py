@@ -26,9 +26,7 @@ class Professeur(Personne):
     def enseigner(self):
         print("Le cours va commencer")
 
-# Instanciation d'une personne et d'un élève
 une_personne = Personne()
 un_eleve = Eleve()
 
-# Affichage de l'âge par défaut de l'élève
 un_eleve.afficherAge()
