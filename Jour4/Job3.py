@@ -29,21 +29,21 @@ class Rectangle:
 class Parallelepipede(Rectangle):
     def __init__(self, longueur, largeur, hauteur):
         super().__init__(longueur, largeur)
-        self.__hauteur = hauteur
+        self.hauteur = hauteur
 
     def get_hauteur(self):
-        return self.__hauteur
+        return self.hauteur
 
     def set_hauteur(self, hauteur):
-        self.__hauteur = hauteur
+        self.hauteur = hauteur
 
     # Méthode pour calculer le volume du parallélépipède
     def volume(self):
-        return self.get_longueur() * self.get_largeur() * self.__hauteur
+        return self.get_longueur() * self.get_largeur() * self.hauteur
 
     # Méthode pour calculer la surface du parallélépipède
     def surface(self):
-        return (self.get_longueur() * self.get_largeur() + self.get_longueur() * self.__hauteur + self.get_largeur() * self.__hauteur) * 2
+        return (self.get_longueur() * self.get_largeur() + self.get_longueur() * self.hauteur + self.get_largeur() * self.hauteur) * 2
 
 
 # Instanciation d'un objet de type Rectangle
